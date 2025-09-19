@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário para castração de animais</h1>
+    <form method="get" action="teste.jsp">
+    Nome do(a) dono(a): <input type="text" name="nome_dono"><br><br>
+    E-mail: <input type="email" name="email"><br><br>
+    Nome do animal: <input type="text" name="nome_animal"><br><br>
+
+   Espécie:
+   <input type="radio" name="especie" value="Felina"> Felina
+   <input type="radio" name="especie" value="Canina"> Canina<br><br>
+    Porte do animal:
+    <input type="radio" name="porte" value="Pequeno"> Pequeno
+    <input type="radio" name="porte" value="Médio"> Médio
+    <input type="radio" name="porte" value="Grande"> Grande<br><br>
+    Tamanho pelagem:
+    <input type="radio" name="pelagem" value="Curta"> Curta
+    <input type="radio" name="pelagem" value="Médip"> Médio
+    <input type="radio" name="pelagem" value="Grande"> Grande
+    <br><br>
+    Origem do animal: <select name="origemdoanimal">
+        <option>Rua</option>
+        <option>Presente</option>
+        <option>Comprado</option>
+        <option>Outros</option>
+    </select> <br><br>
+    Data de nascimento:
+    <input type="date" name="data_nascimento"><br><br>
+    Ao concluir, você concorda com os termos:
+    <input type="checkbox" name="politicadeprivacidade" value="sim"> Política de privacidade
+    <input type="checkbox" name="autorizacaoparacastracao" value="sim"> Autorização da castração de animal <br><br>
+    Observações:
+    <br><br><textarea name="observacoes" rows="10" cols="30"></textarea>
+    <br><br>
+    <input type="submit" value="Enviar para análise">
+
+    </form>
+</body>
+</html>
